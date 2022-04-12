@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;  /* to remove the blue border around the input fields */
+    box-sizing: border-box;  /* use this so that the padding and border get included into the width of the element */
+    font-family: 'Roboto', sans-serif; /* it sents the font that we will be usin*/
+}
+
+body{
+    background: url("btcpic.png") no-repeat center; 
+    background-size:cover;
+    width:50%;
+    height:100vh;
+    
+
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;/*moves the box up or down*/
+    left: 30%;/*moves the location to the right or left */
+    transform: translateY(-50%,-50%);  /* use the translate method of transform property to remove tthe negative margins */
+    background:rgba(0, 0, 0, 0.884);/*creates an outline for the search box*/
+    max-width: 800px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex; /* by using flex it puts search box and comment into the same row*/
+    justify-content: space-between;  /* using the justify content property to create the space between the input field and search box */
+
+}
+
+.wrapper .input{
+    width:85%;
+    padding:15px 20px;
+    border:none;
+    border-radius:7px; /*sets border radius*/
+    font-weight:bold;
+}
+
+.searchbtn{
+    background: #1abdd3ce;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fas{
+    position: absolute;  /* using absolute position to place telescope icon in the center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
